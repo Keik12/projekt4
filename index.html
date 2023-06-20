@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,18 +14,28 @@
       <div class="text-label" id="textLabel">Przelicznik walut</div>
     </div>
     <div class="container">
-      <input
-        class="amount-value"
-        id="amountValue"
-        type="number"
-        placeholder="Wprowadź kwotę"
-      />
-      <select name="" id="chooseCurrency" class="choose-currency">
-        <option value="">Wybierz walutę</option>
-        <option value="EUR">EUR</option>
-        <option value="USD">USD</option>
-        <option value="CHF">CHF</option>
-      </select>
+      <div class="wrapper">
+        <input
+          class="amount-value"
+          id="amountValue"
+          type="number"
+          placeholder="Wprowadź kwotę"
+        />
+        <label for="amountValue" id="wrongValue" class="wrong-value"></label>
+      </div>
+      <div class="wrapper">
+        <select name="" id="chooseCurrency" class="choose-currency">
+          <option value="">Wybierz walutę</option>
+          <option value="EUR">EUR</option>
+          <option value="USD">USD</option>
+          <option value="CHF">CHF</option>
+        </select>
+        <label
+          for="chooseCurrency"
+          id="wrongCurrency"
+          class="wrong-currency"
+        ></label>
+      </div>
       <button class="count-result-btn" id="countResultBtn">Przelicz</button>
       <span class="result-text">TO</span>
       <span class="result-text" id="amountConverted">0</span>
