@@ -9,37 +9,36 @@
     <title>Projekt4</title>
   </head>
   <body>
-    <div class="container">
+    <header class="container">
       <div class="logo" id="logo">Logo</div>
       <div class="text-label" id="textLabel">Przelicznik walut</div>
-    </div>
+    </header>
     <div class="container">
-      <div class="wrapper">
-        <input
-          class="amount-value"
-          id="amountValue"
-          type="number"
-          placeholder="Wprowadź kwotę"
-        />
-        <label for="amountValue" id="wrongValue" class="wrong-value"></label>
-      </div>
-      <div class="wrapper">
-        <select name="" id="chooseCurrency" class="choose-currency">
-          <option value="">Wybierz walutę</option>
-          <option value="EUR">EUR</option>
-          <option value="USD">USD</option>
-          <option value="CHF">CHF</option>
-        </select>
-        <label
-          for="chooseCurrency"
-          id="wrongCurrency"
-          class="wrong-currency"
-        ></label>
-      </div>
+      <label for="amountValue" class="text-label"> Kwota </label>
+      <input
+        class="amount-value"
+        id="amountValue"
+        type="number"
+        placeholder="Wprowadź kwotę"
+      />
+      <label for="amountValue" id="wrongValue" class="wrong-value"></label>
+
+      <label class="text-label currency" for="chooseCurrency"> Waluta </label>
+      <select name="chooseCurrency" id="chooseCurrency" class="choose-currency">
+        <option value="">Wybierz walutę</option>
+        <option value="EUR">EUR</option>
+        <option value="USD">USD</option>
+        <option value="CHF">CHF</option>
+      </select>
+      <label
+        for="chooseCurrency"
+        id="wrongCurrency"
+        class="wrong-currency"
+      ></label>
       <button class="count-result-btn" id="countResultBtn">Przelicz</button>
-      <span class="result-text">TO</span>
-      <span class="result-text" id="amountConverted">0</span>
-      <span class="result-text">PLN</span>
+      <span class="result">TO</span>
+      <span class="result" id="amountConverted">0</span>
+      <span class="result">PLN</span>
     </div>
     <script src="index.js" type="module"></script>
   </body>

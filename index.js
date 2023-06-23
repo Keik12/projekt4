@@ -7,15 +7,15 @@ const wrongCurrency = document.getElementById("wrongCurrency");
 
 const getCurrency = () => {
   if (!chooseCurrency.value) {
-    document.getElementById("wrongCurrency").style.color = "red";
+    document.getElementById("wrongCurrency");
     return (wrongCurrency.innerHTML = "Wybierz walutę");
   }
   if (!amountValue.value) {
-    document.getElementById("wrongValue").style.color = "red";
+    document.getElementById("wrongValue");
     return (wrongValue.innerHTML = "Wprowadź kwotę");
   }
   if (amountValue.value <= 0) {
-    document.getElementById("wrongValue").style.color = "red";
+    document.getElementById("wrongValue");
     return (wrongValue.innerHTML = "Wartośc musi być większa niż zero");
   }
 
