@@ -62,8 +62,7 @@
   font-weight: bold;
 }
 
-.wrong-value,
-.wrong-currency {
+.wrong-value {
   text-align: center;
   font-size: 18px;
   margin: 5px 0 20px;
